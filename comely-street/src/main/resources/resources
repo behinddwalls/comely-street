@@ -1,0 +1,26 @@
+ac87a32363f7:~ preetam$ mongo
+MongoDB shell version: 3.0.2
+connecting to: test
+Server has startup warnings: 
+2015-10-19T22:27:48.329+0530 I CONTROL  [initandlisten] 
+2015-10-19T22:27:48.329+0530 I CONTROL  [initandlisten] ** WARNING: soft rlimits too low. Number of files is 256, should be at least 1000
+> 
+> 
+> use comelyStreet;
+switched to db comelyStreet
+> show dbs;
+linkedinprofiledb  0.078GB
+local              0.078GB
+mydb               0.453GB
+> show dbs;
+comelyStreet       0.078GB
+linkedinprofiledb  0.078GB
+local              0.078GB
+mydb               0.453GB
+> show dbs;
+comelyStreet       0.078GB
+linkedinprofiledb  0.078GB
+local              0.078GB
+mydb               0.453GB
+> db.test.find();
+{ "_id" : ObjectId("562522a4e4d8931fffbbbabc"), "_class" : "com.comelystreet.dao.mongodb.model.Test", "contact" : { "mobile" : "909090" } }

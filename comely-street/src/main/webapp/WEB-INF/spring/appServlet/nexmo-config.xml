@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:mvc="http://www.springframework.org/schema/mvc" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:util="http://www.springframework.org/schema/util"
+	xsi:schemaLocation="
+        http://www.springframework.org/schema/beans     
+        http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/context 
+        http://www.springframework.org/schema/context/spring-context.xsd
+        http://www.springframework.org/schema/mvc
+        http://www.springframework.org/schema/mvc/spring-mvc.xsd
+        http://www.springframework.org/schema/util 
+        http://www.springframework.org/schema/util/spring-util.xsd">
+
+	<!-- Nexmo API Configs -->
+	<util:map id="nexmoServiceEndpoint">
+		<entry key="host" value="rest.nexmo.com" />
+		<entry key="port" value="443" />
+		<entry key="protocol" value="https" />
+	</util:map>
+
+	<util:map id="nexmoSMSApiEndpoints">
+		<entry key="sms" value="/sms/json" />
+	</util:map>
+
+	<util:map id="nexmoServiceEndpointCredentials">
+		<entry key="api_key" value="51b3957b" />
+		<entry key="api_secret" value="0f650477" />
+	</util:map>
+
+</beans>
